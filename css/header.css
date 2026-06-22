@@ -1,0 +1,40 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --dark-blue-1: #060e1b;
+    --dark-blue-2: #081427;
+    --cyan: #70e3ea;
+}
+
+header{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--dark-blue-1);
+    min-height: 10px;
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 60px;
+    height: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.box-img-icons{
+    display: flex;
+    padding: .6rem;
+    gap: 2rem;
+}

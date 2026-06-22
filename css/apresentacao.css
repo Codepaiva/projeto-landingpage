@@ -1,0 +1,21 @@
+strong{
+    background-color: rgba(192, 192, 192, 0.493);
+    border: 1px solid rgba(192, 192, 192, 0.541);
+    border-radius: 10px;
+}
+
+.section-apresentacao {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+.section-apresentacao > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
