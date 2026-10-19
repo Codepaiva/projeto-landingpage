@@ -1,4 +1,49 @@
+.section-sobre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+    gap: 1rem;
+    min-width: 360px;
+}
+
+
 .box-sobre-mim{
-    border: 0.5px solid #b4b4b4;
+    border: 1px solid rgba(255, 255, 255, 0.644);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.box-title-sobre-mim{
+    display: inline-flex;
+    gap: 1rem;
+}
+
+
+.box-description-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+    gap: 1rem;
+    padding-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.box-description-sobre p{
+    display: flex;
+    text-align: justify;
+    max-width: 800px;
+    min-width: 579px;
+}
+
+
+.box-img-sobre img{
+    width: 200px;
     border-radius: 2px;
 }
+
