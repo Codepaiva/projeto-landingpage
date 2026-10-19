@@ -1,11 +1,23 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --dark-blue-1: #060e1b;
+    --dark-blue-2: #050f1f;
+    --dark-blue-3: #041024;
+    --cyan: #70e3ea;
+}
+
+
+
 .section-sobre {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
-    
     gap: 1rem;
     min-width: 360px;
+
+    background-color: var(--dark-blue-3);
 }
 
 
@@ -39,6 +51,15 @@
     text-align: justify;
     max-width: 800px;
     min-width: 579px;
+}
+
+.box-img-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+    gap: 1rem;
+    padding: 20px;
 }
 
 
