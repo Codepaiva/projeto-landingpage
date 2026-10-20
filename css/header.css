@@ -1,75 +1,42 @@
-:root{
-    --white: #ffffff;
-    --black: #000000;
-    --dark-blue-1: #060e1b;
-    --dark-blue-2: #081427;
-    --cyan: #70e3ea;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 3rem;
-    padding: .9rem;
-    min-height: 65px;
-
-    background-color: var(--dark-blue-1);
-
-    flex-wrap: wrap;
-    
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 2rem;
-
-    flex-wrap: wrap;
-}
-
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 3rem;
-}
-
-
 .box-menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
-    padding: .3rem;
-    gap: 3rem;
+    padding: 1rem;
+    gap: 2rem;
 }
 
 .box-title-header{
     display: flex;
+    justify-content: center;
     align-items: center;
 
     gap: 1rem;
-
+    
 }
 
 .btn-action-curriculo{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    gap: 8px;
+        
+    gap: 0.3rem;
     padding: 0.5rem 1rem;
-
-    background-color: var(--dark-blue-2);
+    
+    background-color: var(--dark-blue-1);
     color: var(--white);
-    border: 1px solid var(--grey);
+    
+    border: 1px solid var(--white);
     border-radius: 4px;
+}
+
+.btn-action-curriculo:hover{
+    background-color: rgb(7, 186, 240);
+    
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    
+    cursor: pointer;
 }
