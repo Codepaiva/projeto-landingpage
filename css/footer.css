@@ -1,10 +1,25 @@
 footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    
-    gap: 4rem;
-    height: 100px;
+
+    padding: 4rem;
+    gap: 2rem;
+    min-width: 667px;
 
     background-color: var(--dark-blue-1);
+}
+
+.box-text-copywrith{
+    display: flex;
+    /* justify-content: space-around; */
+    
+    gap: 2rem;
+    
+    flex-wrap: wrap;
+}
+
+
+.box-text-copywrith p {
+    text-align: justify;
 }
