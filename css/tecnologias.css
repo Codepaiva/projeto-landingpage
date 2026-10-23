@@ -1,6 +1,6 @@
 .section-tecnologias{
     display: flex;
-    justify-content: column;
+    flex-direction: column;
 
     gap: 1rem;
 }
@@ -8,14 +8,13 @@
 
 .box-tech{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     gap: 1rem;
     padding: 0.2rem 1rem;
-    
 
-    flex-wrap: wrap;
     border: 1px solid rgba(255, 255, 255, 0.644);
     border-radius: 10px;
     padding: 20px;
@@ -26,10 +25,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     gap: 1rem;
     
     letter-spacing: 2px;
-    
 }
 
 
@@ -91,6 +90,7 @@
 
     gap: 0.5rem;
     padding: 0.3rem 0.7rem;
+    min-width: 10px;
 }
 
 .box-tech-description svg{

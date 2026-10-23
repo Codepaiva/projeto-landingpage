@@ -7,8 +7,9 @@
 
 .box-about-me{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: column;
+    align-items: center;
     
     flex-wrap: wrap;
 
@@ -32,12 +33,13 @@
 
 .box-title-about-me{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     gap: 1rem;
 
     letter-spacing: 2px;
+    
 }
 
 
@@ -58,8 +60,8 @@ p{
     text-align: justify;
 }
 
-@media (max-width: 526px) {
+/* @media (max-width: 526px) {
     .box-description-me {
         flex-wrap: wrap;
     }
-}
+} */

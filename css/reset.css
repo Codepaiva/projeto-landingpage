@@ -94,3 +94,19 @@ strong{
     border-radius: 10px;
     padding: 0.2rem 0.5rem;
 }
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    background-color: var(--dark-blue-1);
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

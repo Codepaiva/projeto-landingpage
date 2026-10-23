@@ -1,0 +1,87 @@
+.section-projetos{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+
+.box-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1rem;
+    padding: 0.2rem 1rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.644);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+.box-title-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1rem;
+    
+    letter-spacing: 2px;
+}
+
+
+.box-title-projects svg{
+    background-color: rgba(129, 178, 243, 0.158);
+    color: rgb(7, 186, 240);
+    border: 0px solid rgba(106, 162, 235, 0.589);
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+}
+
+.box-group-projects{
+    display: flex;
+    flex-direction: column;
+
+
+    gap: 3rem;
+    padding: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+#my-projects-list{
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+
+#my-projects-list div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: justify;
+
+    padding: 0.2rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.644);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+
+#my-projects-list a {
+    font-size: 1.1rem;
+}
+
+
+#my-projects-list p {
+    text-align: justify;
+}
+
