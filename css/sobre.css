@@ -1,52 +1,65 @@
 .section-sobre {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
 
     gap: 1rem;
 }
 
+.box-about-me{
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    
+    flex-wrap: wrap;
 
-.box-sobre-mim{
+    gap: 1rem;
+    padding: 0.2rem 1rem;
+    
     border: 1px solid rgba(255, 255, 255, 0.644);
     border-radius: 10px;
     padding: 20px;
 }
 
 
-.box-title-sobre-mim{
-    display: inline-flex;
-    gap: 1rem;
+.box-title-about-me svg{
+    background-color: rgba(129, 178, 243, 0.158);
+    color: rgb(7, 186, 240);
+    border: 0px solid rgba(106, 162, 235, 0.589);
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
 }
 
 
-.box-description-sobre{
+.box-title-about-me{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 
     gap: 1rem;
-    padding-top: 25px;
 
-    flex-wrap: wrap;
+    letter-spacing: 2px;
 }
 
 
-.box-description-sobre p{
+.box-description-me{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box-description{
+    padding: 1rem;
+}
+
+
+p{
     text-align: justify;
 }
 
-.box-img-sobre{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-
-    gap: 1rem;
-    padding: 20px;
-}
-
-
-.box-img-sobre img{
-    width: 85%;
-    padding: 1rem;
+@media (max-width: 526px) {
+    .box-description-me {
+        flex-wrap: wrap;
+    }
 }

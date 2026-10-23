@@ -1,11 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root{
@@ -15,6 +13,8 @@
     --dark-blue-2: #0b1a31;
     --dark-blue-3: #041024;
     --cyan: #70e3ea;
+
+    --font-primary: 'Poppins';
 }
 
 header{
@@ -38,6 +38,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul{
@@ -46,6 +47,8 @@ nav ul{
     align-items: center;
     
     gap: 0.5rem;
+
+    list-style: none;
 }
 
 
@@ -55,13 +58,9 @@ body{
     color: var(--white);
     background-size: 400%;
     height: 100vh;
-    font-family: 'Poppins';
+    font-family: var(--font-primary);
 }
 
-
-ul {
-    list-style: none;
-}
 
 a {
     text-decoration: none;
@@ -73,17 +72,12 @@ a:hover{
     transition: .3s;
 }
 
-h1{
-    font-size: 3rem;
-    letter-spacing: 2px;
-}
-
-
 main {
     display: flex;
     flex-direction: column;
 
-    gap: 2rem;
+
+    gap: 3rem;
         
 }
 
@@ -100,10 +94,3 @@ strong{
     border-radius: 10px;
     padding: 0.2rem 0.5rem;
 }
-
-
-/* :is(button){
-    padding: 0.6rem 1rem;
-    
-    transition: .2s;
-} */
