@@ -1,24 +1,32 @@
+/* ------SECTION-ABOUT------ */
+
 .section-sobre {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 
+    padding: 2rem 1rem;
+}
+
+
+
+.box-section-about-me{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-width: 75%;
+    min-width: 0;
+    padding-top: 8rem;
     gap: 1rem;
 }
 
-.box-about-me{
+
+.box-title-about-me{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     
-    flex-wrap: wrap;
-
     gap: 1rem;
-    padding: 0.2rem 1rem;
-    
-    border: 1px solid rgba(255, 255, 255, 0.644);
-    border-radius: 10px;
-    padding: 20px;
 }
 
 
@@ -31,15 +39,10 @@
 }
 
 
-.box-title-about-me{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 1rem;
-
-    letter-spacing: 2px;
-    
+.box-title-about-me h2{
+    font-size: var(--font-size-medium);
+    color: var(--branco);
+    gap: 4rem;
 }
 
 
@@ -47,18 +50,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
 
-
-.box-description{
+    gap: 1rem;
     padding: 1rem;
 }
 
+.box-description-me p{
+    font-size: var(--font-size-small);
 
-p{
-    text-align: justify;
 }
+
 
 /* @media (max-width: 526px) {
     .box-description-me {

@@ -1,0 +1,47 @@
+/* ------SECTION-CONTACT------ */
+
+.section-contact{
+    display: flex;
+    justify-content: center;
+
+
+    padding: 2rem 1rem;
+
+    background-color: var(--color-surface);
+}
+
+
+.box-section-contact{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-width: 75%;
+    min-width: 0;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.box-title-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1rem;
+}
+
+
+.box-title-contact svg{
+    background-color: rgba(129, 178, 243, 0.158);
+    color: rgb(7, 186, 240);
+    border: 0px solid rgba(106, 162, 235, 0.589);
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+}
+
+
+.box-title-contact h2{
+    font-size: var(--font-size-medium);
+    color: var(--branco);
+    gap: 4rem;
+}

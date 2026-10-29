@@ -1,24 +1,23 @@
-.section-projetos{
+/* ------SECTION-PROJECTS------ */
+
+.section-projects{
     display: flex;
-    flex-direction: column;
-
-    gap: 1rem;
-}
-
-
-.box-projects{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 
-    gap: 1rem;
-    padding: 0.2rem 1rem;
-
-    border: 1px solid rgba(255, 255, 255, 0.644);
-    border-radius: 10px;
-    padding: 20px;
+    padding: 2rem 1rem;
 }
 
+
+.box-section-projects{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-width: 75%;
+    min-width: 0;
+    padding-top: 8rem;
+    gap: 1rem;
+}
 
 
 .box-title-projects{
@@ -27,8 +26,6 @@
     align-items: center;
     
     gap: 1rem;
-    
-    letter-spacing: 2px;
 }
 
 
@@ -40,48 +37,109 @@
     padding: 0.2rem 0.5rem;
 }
 
-.box-group-projects{
-    display: flex;
-    flex-direction: column;
 
-
-    gap: 3rem;
-    padding: 20px;
-    flex-wrap: wrap;
-
-
+.box-title-projects h2{
+    font-size: var(--font-size-medium);
+    color: var(--branco);
+    gap: 4rem;
 }
 
-#my-projects-list{
+
+.box-group-projects{
     display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
 
-#my-projects-list div {
+.card-projects{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+
     
-    text-align: justify;
+    padding: 1rem;
+    gap: 1rem;
 
-    padding: 0.2rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+}
 
-    border: 1px solid rgba(255, 255, 255, 0.644);
+
+.card-projects:hover{
+    transform: scale(1.03);
+}
+
+
+
+
+#description{
+    text-align: center;
+    font-size: var(--font-size-small);
+    color: var(--texto-secundario);
+}
+
+
+.card-projects img{
+    width: 100%;
     border-radius: 10px;
-    padding: 20px;
-
 }
 
 
-#my-projects-list a {
-    font-size: 1.1rem;
+.card-header {
+    
 }
 
 
-#my-projects-list p {
-    text-align: justify;
+.card-header h4{
+    font-size: var(--font-size-small);
+    gap: 1rem;
 }
 
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.card-body h5, h4{
+    gap: 1rem;
+    padding: 1rem 1rem;
+}
+
+
+.card-body span{
+    display: inline-flex;
+
+    max-width:max-content;
+    padding: 0.1rem 1rem;
+    gap: 1rem;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+}
+
+
+.card-body span:hover{
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+}
+
+.card-footer{
+    display: flex;
+    align-items: baseline;
+}
+
+
+.card-projects button{
+    width: 100px;
+    padding: 0.5rem;
+    gap: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    cursor: pointer;
+}
