@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./src/imgs/icone-cpw.ico">
 
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/apresentacao.css">
-    <link rel="stylesheet" href="./css/sobre.css">
-    <link rel="stylesheet" href="./css/tecnologias.css">
-    <link rel="stylesheet" href="./css/projetos.css">
-    <link rel="stylesheet" href="./css/contato.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/apresentacao.css">
+    <link rel="stylesheet" href="./assets/css/sobre.css">
+    <link rel="stylesheet" href="./assets/css/tecnologias.css">
+    <link rel="stylesheet" href="./assets/css/projetos.css">
+    <link rel="stylesheet" href="./assets/css/contato.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
 
     <title>Pedro Paiva | Backend Developer</title>
 </head>
@@ -20,7 +20,10 @@
     <header>
         <div class='box-title-header'>
             <img class="img-logo"  src="./src/imgs/logo-cp.png" alt="logo">
-            <h2>Code Paiva</h2>
+            <div class="box-title">
+                <h2>Pedro Paiva</h2>
+                <span>Codepaiva</span>
+            </div>
         </div>
 
         <div class='box-menu'>
@@ -78,12 +81,8 @@
                 </div>
                 
                 <div class='box-description-me'>
-                    <p>
-                        Formado em Análise e Desevolvimento de Sistemas (ADS), pela Estácio de Sá.
-                        Atualmente, estou em transição de carreira para atuar como desenvolvedor de software, com foco em back-end.</br>
-                        Venho direcionando meus estudos para o desenvolvimento de APIs, automações e boas práticas de programação.
-                        Busco consolidar meus conhecimentos desenvolvendo soluções que me preparem para os desafios do ambiente profissional.
-                    </p>
+                    <p>Formado em <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> pela Estácio de Sá, atualmente estou em transição de carreira para atuar como desenvolvedor de software, com <strong>foco em backend</strong>.</p>
+                    <p>Tenho direcionado meus estudos para o desenvolvimento de APIs, automações e boas práticas de programação. Busco consolidar meus conhecimentos por meio do desenvolvimento de soluções que me preparem para os desafios do ambiente profissional.</p>
                 </div>
             </div>
         </section>
@@ -138,7 +137,7 @@
                      <h2>Projetos</h2>
                 </div>
     
-                <p id="description">Projetos desenvolvidos para solucionar problemas reias.</p>
+                <p id="description">Projetos desenvolvidos para solucionar problemas reais.</p>
                 <div class='box-group-projects'>
                     <div class="card-projects">
                         <img src="./src/imgs/sisupa.png" alt="SisUPA">
@@ -146,18 +145,8 @@
                             <h4>Sistema de Upload de arquivos (SISUPA)</h4>
                             <p>Aplicação desktop desenvolvida para upload, listagem e visualização de arquivos compactados.</p>
                         </div>
-                        <div class="card-body">
-                            <h5>CONCEITOS APLICADOS</h5>
-                            <span>POO</span>
-                            <span>Design Patterns - Strategy</span>
-                            <span>S - SOLID</span>
-                            <h5>TECNOLOGIAS</h5>
-                            <span>Python</span>
-                            <span>Tkinter</span>
-                            <span>SQLite</span>
-                        </div>
                         <div class="card-footer">
-                            <button type="button">Repositório</button>
+                            <a href="https://github.com/Codepaiva/projeto-sisupa" target="_blank" class="project-link">Ver repositório →</a>
                         </div>
                     </div>
                     
@@ -167,20 +156,8 @@
                             <h4>XdataBot</h4>
                             <p>Automação desenvolvida para extração de históricos processuais em sistema web legado.</p>
                         </div>
-                        <div class="card-body">
-                            <h5>CONCEITOS APLICADOS</h5>
-                            <span>POO</span>
-                            <span>S - SOLID</span>
-                            <h5>TECNOLOGIAS</h5>
-                            <span>Python</span>
-                            <span>Selenium</span>
-                            <span>beautfulsoup</span>
-                            <span>openpyxl</span>
-                            <span>pydantic</span>
-                            <span>pathlib</span>
-                        </div>
                         <div class="card-footer">
-                            <button type="button">Repositório</button>
+                            <a href="https://github.com/Codepaiva/projeto-xdatabot" target="_blank" class="project-link">Ver repositório →</a>
                         </div>
                     </div>
                     
@@ -190,18 +167,8 @@
                             <h4>ConvertDebit</h4>
                             <p>Aplicação desktop desenvolvida para agilizar a inserção dados na Plataforma de Gestão de Dívidas do TCU.</p>
                         </div>
-                        <div class="card-body">
-                            <h5>CONCEITOS APLICADOS</h5>
-                            <span>POO</span>
-                            <span>S - SOLID</span>
-                            <h5>TECNOLOGIAS</h5>
-                            <span>Python</span>
-                            <span>Tkinter</span>
-                            <span>Openpyxl</span>
-                            <span>Pandas</span>
-                        </div>
                         <div class="card-footer">
-                            <button type="button">Repositório</button>
+                            <a href="https://github.com/Codepaiva/projeto-convertdebit" target="_blank" class="project-link">Ver repositório →</a>
                         </div>
                     </div>
                 </div>
@@ -217,8 +184,41 @@
     
                      <h2>Contato</h2>
                 </div>
+                <p id="description">Aberto a oportunidades para desenvolvedor backend.</p>
                 <div class="box-group-contacts">
-                    <p>Meus contatos</p>
+                    <div class="card-contact">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </div>
+                        <div class="card-link-contact">
+                            <p>GitHub</p>
+                            <a href="https://github.com/Codepaiva">github.com/Codepaiva</a>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </div>
+                        <div class="card-link-contact">
+                            <p>Linkedin</p>
+                            <a href="https://www.linkedin.com/in/codepaiva/">linkedin.com/in/codepaiva/</a>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                            </svg>
+                        </div>
+                        <div class="card-link-contact">
+                            <p>E-mail</p>
+                            <a href="mailto:codepaiva@gmail.com">codepaiva@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -227,6 +227,9 @@
     <footer>
         <div class='box-text-copywrith'>
             <p>© 2026 Pedro Paiva. Todos os diretos reservados.</p>
+        </div>
+        <div class='box-text-stack'>
+            <p>Desenvolvedor backend.</p>
         </div>
     </footer>
 </body>

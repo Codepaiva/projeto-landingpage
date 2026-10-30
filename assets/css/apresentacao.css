@@ -10,11 +10,11 @@
 
 
 .box-section-introduction{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    width: 100%;
+    max-width: 75%;
+    min-width: 0;
     padding-top: 6rem;
+    gap: 1rem;
 }
 
 
