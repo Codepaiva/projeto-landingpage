@@ -4,34 +4,32 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    
+    padding: 2rem 1rem;
 
     background-color: var(--color-surface);
 }
 
 
 .box-section-introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     width: 100%;
-    max-width: 75%;
-    min-width: 0;
-    padding-top: 6rem;
-    gap: 1rem;
-}
-
-
-.box-introduction{
+    
     gap: 1rem;
     padding: 2rem;
 }
 
 
-.box-introduction span {
-    font-size: var(--font-size-small);
-    padding: 0.2rem 0.5rem;
+.box-introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    background-color: rgba(129, 178, 243, 0.158);
-    color: rgb(7, 186, 240);
-    border: 0px solid var(--color-border);
-    border-radius: 12px;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 
@@ -53,9 +51,10 @@
 
 .box-actions{
     display: flex;
+    flex-direction: row;
+    justify-content: left;
     
     gap: 1rem;
-    padding-left: 2rem;
 
     flex-wrap: wrap;
 }
@@ -81,3 +80,4 @@
     color: var(--color-surface);
     background-color: var(--color-accent);
 }
+

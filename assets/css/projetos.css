@@ -13,9 +13,8 @@
     flex-direction: column;
     
     width: 100%;
-    max-width: 65%;
-    min-width: 0;
-    padding-top: 8rem;
+   
+    padding: 2rem;
     gap: 1rem;
 }
 
@@ -45,6 +44,13 @@
 }
 
 
+#description{
+    text-align: left;
+    font-size: var(--font-size-small);
+    color: var(--texto-secundario);
+}
+
+
 .box-group-projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -69,15 +75,6 @@
 
 .card-projects:hover{
     transform: scale(1.03);
-}
-
-
-
-
-#description{
-    text-align: left;
-    font-size: var(--font-size-small);
-    color: var(--texto-secundario);
 }
 
 
@@ -116,3 +113,15 @@
 .card-projects a:hover{
     color:  var(--color-accent);
 }
+
+
+
+/* .box-introduction span {
+    font-size: var(--font-size-small);
+    padding: 0.2rem 0.5rem;
+
+    background-color: rgba(129, 178, 243, 0.158);
+    color: rgb(7, 186, 240);
+    border: 0px solid var(--color-border);
+    border-radius: 12px;
+} */

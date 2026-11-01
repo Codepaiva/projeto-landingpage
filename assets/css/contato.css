@@ -13,23 +13,10 @@
 .box-section-contact{
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     width: 100%;
-    max-width: 65%;
-    min-width: 0;
-    padding: 1rem;
+    padding: 2rem;
     gap: 1rem;
-}
-
-.box-title-contact{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-    gap: 1rem;
-
-    flex-wrap: wrap;
 }
 
 
@@ -39,6 +26,14 @@
     border: 0px solid rgba(106, 162, 235, 0.589);
     border-radius: 10px;
     padding: 0.2rem 0.5rem;
+}
+
+.box-title-contact{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    gap: 1rem;
 }
 
 
@@ -58,7 +53,6 @@
 .box-group-contacts{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
     gap: 1rem;
 }
 

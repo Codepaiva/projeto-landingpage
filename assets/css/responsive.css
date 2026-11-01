@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    .box-section-introduction,
+    .box-section-about-me,
+    .box-section-tech,
+    .box-section-projects,
+    .box-section-contact
+    {
+        max-width: 75%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* ---INTRODUCTION--- */
+    .box-introduction h1{
+        font-size: var(--font-size-xmedium);
+    }
+
+    .box-introduction h2{
+        font-size: var(--font-size-small);
+    }
+
+    .box-introduction p{
+        font-size: var(--font-size-xsmall);
+    }
+
+    /* ---ABOUT-ME--- */
+    .box-description-me p{
+        font-size: var(--font-size-xsmall);
+        text-align: start;
+    }
+
+    /* ---CONTACT--- */
+    #description{
+        font-size: var(--font-size-xsmall);
+    }
+
+}

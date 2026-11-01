@@ -14,9 +14,8 @@
     flex-direction: column;
     
     width: 100%;
-    max-width: 65%;
-    min-width: 0;
-    padding-top: 8rem;
+
+    padding: 2rem;
     gap: 1rem;
 }
 
@@ -59,12 +58,6 @@
 
 .box-description-me p{
     font-size: var(--font-size-small);
+    text-align: justify;
 
 }
-
-
-/* @media (max-width: 526px) {
-    .box-description-me {
-        flex-wrap: wrap;
-    }
-} */

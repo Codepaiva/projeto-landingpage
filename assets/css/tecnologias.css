@@ -1,7 +1,8 @@
-.section-tecnologias{
+/* ------SECTION-TECHNOLOGY------ */
+
+.section-technology{
     display: flex;
     justify-content: center;
-
 
     padding: 2rem 1rem;
 
@@ -12,20 +13,10 @@
 .box-section-tech{
     display: flex;
     flex-direction: column;
-    
 
     width: 100%;
-    max-width: 65%;
-    min-width: 0;
-    padding-top: 8rem;
+    padding: 2rem;
     gap: 1rem;
-}
-
-
-.box-section-tech p{
-    text-align: left;
-    font-size: var(--font-size-small);
-    color: var(--texto-secundario);
 }
 
 
@@ -54,6 +45,13 @@
 }
 
 
+#description {
+    text-align: left;
+    font-size: var(--font-size-small);
+    color: var(--texto-secundario);
+}
+
+
 .box-group-techs{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -63,10 +61,11 @@
 .box-techs{
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
    
 
     padding: 1rem;
-    gap: 0.65rem;
+    gap: 1rem;
 
     border: 1px solid var(--color-text);
     border-radius: 5px;
