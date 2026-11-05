@@ -60,7 +60,35 @@
 }
 
 
-.box-actions span{
+.btn-open-form,
+.btn-download
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.6rem;
+    padding: 0.6rem 1rem;
+    
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+#id-btn-open-form{
+    color: var(--color-surface);
+    background-color: var(--color-accent);
+}
+
+
+#btn-download:hover{
+    transition: .4s;
+    box-shadow: 2px 2px var(--color-accent-light);
+}
+
+/* .box-actions span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,5 +107,5 @@
 .action-service{
     color: var(--color-surface);
     background-color: var(--color-accent);
-}
+} */
 

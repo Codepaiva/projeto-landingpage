@@ -1,0 +1,152 @@
+/* Classe inserida pelo JS */
+.no-scroll {
+    overflow: hidden;
+}
+
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 2rem 1rem;
+
+    background-color: rgba(83, 83, 83, 0.63);
+    
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+}
+
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    gap: 1rem;
+    padding: 1rem;
+    width: fit-content;
+    
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+
+    background-color: var(--color-surface);
+}
+
+
+
+.closed-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+.modal-title-form{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    gap: 1rem;
+    padding: 1rem;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+.modal-title-form > svg{
+    background-color: rgba(129, 178, 243, 0.158);
+    color: rgb(7, 186, 240);
+    border: 0px solid rgba(106, 162, 235, 0.589);
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+}
+
+
+.btn-modal-closed{
+    border: none;
+    background-color: transparent;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.btn-modal-closed:hover{
+    box-shadow: 2px 2px var(--color-accent-light);
+    transition: .3s;
+}
+
+
+.modal-content-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+
+    background-color: var(--color-background);
+    border-radius: 5px;
+}
+
+
+
+.modal-form-data{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.modal-form-data > input{
+    border: none;
+    border-bottom: 2px solid var(--color-accent-light);
+    padding: 0.8rem 0rem;
+    outline: none;
+}
+
+
+.modal-form-data > textarea {
+    outline: none;
+    resize: none;
+}
+
+
+.modal-form-btn-submit{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.btn-push{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.6rem;
+    padding: 0.6rem 1rem;
+    
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    color: var(--color-surface);
+    background-color: var(--color-accent);
+}
