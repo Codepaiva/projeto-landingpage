@@ -1,3 +1,4 @@
+
 function createForm(){
     const div_modal = document.createElement('div');
     div_modal.classList.add('modal');
@@ -10,30 +11,29 @@ function createForm(){
                 </svg>
                 
                 <h2>Solicitação de serviço</h2>
-                <button id="id-btn-closed-form" class="btn-modal-closed">
+                <button id="id-btn-closed-form" class="btn-modal-closed" onclick="removeForm()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
                     </svg>
                 </button>
             </div>
-                
-                
-
+            
             <div class="modal-content-form">
                 <form action="" method="post">
                     <div class="modal-form-data">
                         <label for="name">Nome</label>
-                        <input type="text" id="name" name="name" placeholder="Seu nome" autocomplete="name" required>
+                        <input type="text" id="name" name="name" placeholder="seu nome" autocomplete="off" required>
                     </div>
 
                     <div class="modal-form-data">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="seu.email@gmail.com" autocomplete="email" required>
+                        <input type="email" id="email" name="email" placeholder="seu.email@gmail.com" autocomplete="off" required>
                     </div>
 
                     <div class="modal-form-data">
                         <label for="message_req">Mensagem</label>
                         <textarea name="message_req" id="message_req" placeholder="Descreva sobre seu projeto..." minlength="100" cols="20" rows="10" required></textarea>
+                        <span>* Proposta sujeita a aprovação.</span>
                     </div>
                         
                     <div class="modal-form-btn-submit">
@@ -51,19 +51,24 @@ function createForm(){
     
     document.body.appendChild(div_modal);
     div_modal.focus()
-    document.body.classList.add("no-scroll")
+    document.body.classList.add("no-scroll");
 
 
     // Remove/fecha o formulário pelo button ou div_modal
     const div = document.querySelector('.modal');
-    div.addEventListener('click', removeForm);
+    div.addEventListener('click', (event)=>{
+        if(event.target === div){
+            div.remove();
+            document.body.classList.remove("no-scroll");
+        }
+    });
 }
 
 
 function removeForm(){
     const div = document.querySelector('.modal');
     div.remove();
-    document.body.classList.remove("no-scroll")
+    document.body.classList.remove("no-scroll");
 }
 
 
