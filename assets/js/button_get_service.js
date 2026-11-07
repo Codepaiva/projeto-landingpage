@@ -33,7 +33,7 @@ function createForm(){
                     <div class="modal-form-data">
                         <label for="message_req">Mensagem</label>
                         <textarea name="message_req" id="message_req" placeholder="Descreva sobre seu projeto..." minlength="100" cols="20" rows="10" required></textarea>
-                        <span>* Proposta sujeita a aprovação.</span>
+                        <span>* Proposta sujeita a análise.</span>
                     </div>
                         
                     <div class="modal-form-btn-submit">

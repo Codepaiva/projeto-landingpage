@@ -5,6 +5,7 @@
 
 :root{
     --color-background: #FFFFFF;
+    --color-secudary-background: #3a3838a8;
     --color-surface: #F1F5F9;
 
     --color-primary: #0A2540;
@@ -30,7 +31,7 @@
 }
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box

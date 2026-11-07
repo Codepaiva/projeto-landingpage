@@ -7,6 +7,22 @@
     {
         max-width: 75%;
     }
+
+    .box-group-projects{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 1rem;
+    }
+
+    .modal-form{
+        
+        max-height: 100%;
+    }
+
+    .modal-content-form{
+        max-height: 90%;
+    }
+
 }
 
 
@@ -32,6 +48,15 @@
 
     /* ---CONTACT--- */
     #description{
+        font-size: var(--font-size-xsmall);
+    }
+
+    /* ---Modal--- */
+    .modal-form{
+        font-size: var(--font-size-xsmall);
+    }
+
+    .modal-form h2 {
         font-size: var(--font-size-xsmall);
     }
 
