@@ -54,14 +54,14 @@
 
 .box-group-techs{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
 }
 
 .box-techs{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
    
 
     padding: 1rem;
@@ -73,9 +73,16 @@
     background-color: var(--color-background);
 }
 
-.box-techs h4{
-    color: var(--color-text);
+.box-title-techs{
+    display: flex;
+    align-items: center;
+
+    gap: 0.4rem;
     border-bottom: 1px solid var(--color-text);
+}
+
+.box-title-techs h4{
+    color: var(--color-text);
 }
 
 
