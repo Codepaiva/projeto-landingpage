@@ -62,8 +62,7 @@
 .card-projects{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: top;
+    justify-content: top;
 
     
     padding: 1rem;
@@ -76,6 +75,7 @@
 
 
 .card-projects:hover{
+
     transform: scale(1.03);
 }
 
@@ -162,9 +162,18 @@
     border-radius: 12px;
 }
 
+
+.card-body span:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+
+}
+
+
 .card-footer{
     display: flex;
     justify-content: left;
+    /* align-items: start; */
     flex-wrap: wrap;
 
     gap: 1rem;
