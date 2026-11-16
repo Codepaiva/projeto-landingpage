@@ -24,19 +24,6 @@
 }
 
 
-.box-section-introduction div{
-    display: flex;
-}
-
-.box-img-ilustrative-introduction{
-    max-width: 450px;
-    padding: 1rem;
-}
-
-.img-ilustrative{
-    border-radius: 100%;
-}
-
 .box-introduction{
     display: flex;
     flex-direction: column;

@@ -13,11 +13,10 @@
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 1rem;
     }
-
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1032px) {
     /* ---INTRODUCTION--- */
     .box-introduction h1{
         font-size: var(--font-size-xmedium);
@@ -50,6 +49,7 @@
     .modal-form h2 {
         font-size: var(--font-size-xsmall);
     }
+
 
     .box-img-ilustrative-introduction{
         display: none;

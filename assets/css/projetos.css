@@ -91,6 +91,7 @@
     flex-direction: column;
     justify-content: left;
 
+    width: 100%;
 }
 
 .card-type-project {
@@ -147,6 +148,7 @@
     padding-left: 0rem;
     gap: 1rem;
     cursor: default;
+
 }
 
 .card-body span {
@@ -181,7 +183,7 @@
 
 
 .card-projects a{
-    min-width: 40%;
+    min-width: fit-content;
     padding: 0.6rem;
     gap: 5rem;
 

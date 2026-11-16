@@ -53,18 +53,26 @@
 .box-group-contacts{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
     gap: 1rem;
 }
 
 .card-contact{
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
 
     padding: 1rem;
     gap: 1rem;
 
     position: relative;
+}
+
+
+.card-contact a{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 

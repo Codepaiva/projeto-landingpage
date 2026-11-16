@@ -45,19 +45,37 @@
 }
 
 
+.box-description{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+
 .box-description-me{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-
     gap: 1rem;
     padding: 1rem;
+
 }
 
 .box-description-me p{
     font-size: var(--font-size-small);
     text-align: justify;
 
+    gap: 1rem;
+}
+
+
+.box-img-ilustrative-introduction{
+    padding: 0.3rem;
+    width: 280px;
+}
+
+.img-ilustrative{
+    width: 280px;
 }

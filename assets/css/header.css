@@ -55,13 +55,14 @@ nav a:hover {
 }
 
 
-.box-title h2 {
+.box-title span {
+    font-weight: 800;
     font-size: var(--font-size-small);
     font-family: var(--font-logo);
 }
 
 
-.box-title span {
+.box-title p {
     color: var(--color-text-secondary);
     font-style: italic;
 }
